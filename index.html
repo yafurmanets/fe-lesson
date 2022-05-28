@@ -7,24 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework3</title>
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .command_list {
+            color: darkviolet;
+        }
+    </style>
+
 </head>
 
 <body>
     <h1>Home page</h1>
-    <a href="./gallery.html"><em>Gallery page</em></a>
+    <img src="./images/пшел.png" alt="0" width="350" height="110">
+    <a href="./gallery.html"><em><strong>Gallery page</strong></em></a>
     <header>
         <nav></nav>
     </header>
     <div>
-        <h1>Сommand list</h1>
-
+        <h2>Сommand list</h2>
+        <ul>
+            <li><span class="command_list">git status:</span> перечисляет все новые или изменённые
+                файлы, которые
+                нуждаются в сщхранении
+            </li>
+            <li><span class="command_list">git add [файл]:</span> добавляет файл в отслеживаемую зону
+            </li>
+            <li><span class="command_list">git clone:</span> скачивает репозиторий вместе со всей его
+                историей изменений</li>
+            <li><span class="command_list">git commit -m "[сообщение с описанием]":</span> фиксирует
+                изменения и сохраняет их в историю версий</li>
+            <li><span class="command_list">git branch [имя ветки]:</span> cоздаёт новую ветку</li>
+            <li><span class="command_list">git switch -c [имя ветки]:</span> переключается на выбранную
+                ветку и обновляет рабочую директорию до её
+                состояния</li>
+            <li><span class="command_list">ggit merge [имя ветки]:</span> вносит изменения указанной
+                ветки в текущую ветку</li>
+            <li><span class="command_list">git log:</span> история коммитов для текущей ветки</li>
+            <li><span class="command_list">git push [ветка]:</span> pагружает все изменения локальной
+                ветки в удалённый репозиторий</li>
+        </ul>
     </div>
 
     <main>
 
     </main>
     <footer>
-        <p>&copy;copyright</p>
+        <p>&copy;YaFurmanets</p>
 
     </footer>
 
