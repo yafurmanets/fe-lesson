@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework_5</title>
+    <style>
+        .body {
+            background: url(../images/porsche-zoom2.webp);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin-left: 300px;
+            margin-right: 600px;
+        }
+
+        .registerform {
+            font-size: 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border: solid rgb(165, 164, 164);
+            background-color: rgba(255, 253, 253, 0.795);
+            width: 400px;
+            height: 45px;
+        }
+
+        .fiel {
+            padding: 10px;
+            border: solid rgb(165, 164, 164);
+            background-color: rgba(255, 253, 253, 0.795);
+            border-radius: 40px;
+        }
+
+        .signature {
+            color: rgba(147, 236, 29, 0.966);
+            font-size: 20px;
+        }
+
+        .img {
+            vertical-align: middle;
+            width: 35px;
+            height: 30px;
+        }
+
+        .login {
+            font-size: 30px;
+            color: #f1f0f0;
+        }
+
+        .logo {
+            width: 400px;
+            height: 90px;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <main>
+        <img src="../images/logro.png" alt="logo" class="logo">
+        <section class="container">
+            <fieldset>
+                <legend class="login">AUTO-SELECT</legend>
+                <form>
+                    <button type="submit" class="registerform">
+                        <img src="../images/png-transparent-computer-icons-facebook-logo-facebook-logo-electric-blue-значки-thumbnail.png"
+                            class="img" alt="Facebook">
+                        Увійти через Facebook</button><br>
+                    <button type="submit" class="registerform">
+                        <img src="../images/png-transparent-google-logo-computer-icons-google-text-logo-google-logo.png"
+                            alt="Google" class="img">
+                        Увійти через Goooogle</button><br>
+                    <button type="submit" class="registerform">
+                        <img src="../images/1636121399_55-papik-pro-p-telegram-logotip-foto-58.png" alt="Telegram"
+                            class="img">
+                        Увійти через Telegram</button>
+
+                    <h2 style="color: #f1f0f0e3;">Або</h2>
+                    <p>
+                        <label>
+                            <input type="email" placeholder="Email" class="fiel"><br>
+                        </label>
+                        <br>
+                        <label>
+                            <input type="password" placeholder="Password" class="fiel"><br>
+                        </label>
+                        <br>
+                        <label class="signature">
+                            <input type="checkbox" name="age" required>
+                            <strong>Запам'ятати мене</strong>
+                        </label>
+                        <br>
+                    </p>
+                    <button type="submit" class="registerform">ВХІД</button>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

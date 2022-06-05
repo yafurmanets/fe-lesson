@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -9,133 +9,100 @@
     <style>
         .container {
             max-width: 1000px;
-            margin-left: auto;
-            margin-right: auto;
+            margin-left: 300px;
+            margin-right: 600px;
+        }
+
+        .registerform {
+            font-size: 30px;
+            border-radius: 10px;
+        }
+
+        .login {
+            font-size: 30px;
+            color: #f1f0f0;
+        }
+
+        .fiel {
+            padding: 10px;
+            border: solid rgb(165, 164, 164);
+            background-color: rgba(255, 253, 253, 0.795);
+            border-radius: 40px;
+        }
+
+        .body {
+            background: url(../images/porsche-zoom2.webp);
+        }
+
+        .signature {
+            color: rgba(240, 248, 255, 0.781);
+        }
+
+        .signa {
+            color: #f1f0f057;
+        }
+
+        .img {
+            font-size: 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border: solid rgb(165, 164, 164);
+            background-color: rgba(255, 253, 253, 0.795);
+            width: 450px;
+            height: 45px;
+        }
+
+        .logo {
+            width: 400px;
+            height: 90px;
         }
     </style>
 </head>
 
-<body>
+<body class="body">
     <main>
+        <img src="../images/logro.png" alt="logo" class="logo">
         <section class="container">
-            <h1>Lesson 5. Forms</h1>
             <form>
-                <p>
-                    <label for="nameID">Enter your name</label>
-                    <input id="nameID" type="text" name="name" placeholder="Enter name" required>
-                </p>
-                <p>
-                    <label>
-                        <span>Family</span>
-                        <input type="text" name="family" placeholder="Enter your surname">
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <span>Email:</span>
-                        <input type="email" required>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <span>Phone</span>
-                        <input type="tel">
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <span>Pass</span>
-                        <input type="password">
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <span>Num</span>
-                        <input type="namber" min="0" max="10">
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        Range
-                        <input type="range" min="0" max="10" step="2">
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        Date
-                        <input type="date">
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        Date-time
-                        <input type="datetime-local">
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        Color
-                        <input type="color">
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        Hide - скрытое поле
-                        <input type="hidden">
-                    </label>
-                </p>
                 <fieldset>
-                    <legend>Лписание какой-то группы</legend>
+                    <legend class="login">AUTO-SELECT</legend>
                     <p>
-                        <span>Укажите ваш пол</span><br>
                         <label>
-                            <input type="radio" name="sex" value="man">
-                            мужской
+                            <input type="text" name="name" placeholder="Ім'я" class="fiel"><br>
                         </label>
-                        <label><br>
-                            <input type="radio" name="sex" value="woman">
-                            женский
+                        <br>
+                        <label>
+                            <input type="tel" placeholder="Телефон" class="fiel"><br>
                         </label>
-                        <label><br>
-                            <input type="radio" name="sex" value="secret">
-                            неопределенный
+                        <br>
+                        <label>
+                            <input type="email" required placeholder="Поштова скринька" class="fiel"><br>
                         </label>
+                        <br>
+                        <label>
+                            <input type="password" required placeholder="Надійний пароль:)" class="fiel"><br>
+                        </label>
+                        <br>
+                        <label class="signature">
+                            <input type="checkbox" name="age" required>
+                            Я приймаю умови угоди "Про надання онлайн-сервісів"
+                        </label>
+                        <br>
+                        <span class="signa">
+                            <em>(Ваші персональні дані будуть оброблені та захищені відповідно до Політики
+                                конфіденційності)
+                            </em>
+                        </span>
                     </p>
                 </fieldset>
-                <p>
-                    <label>
-                        <input type="checkbox" name="age">
-                        Мне уже есть 18 лет
-                    </label>
-                    <label><br>
-                        <input type="checkbox" name="license">
-                        Согласен с условиями
-                    </label>
-                </p>
+                <button type="submit" class="img">
+                    Далі</button>
 
-
-                <p>
-                    <label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <select id="selectlist name=list">
-                            <option value="0" selected disabled>Выберите количество</option>
-                            <option value="1">Один</option>
-                            <option value="2">Два</option>
-                            <option value="3">Три</option>
-                            <option value="4">Четыре</option>
-                        </select>
-                    </label>
-                </p>
-
-                <button type="reset">Reset</button>
-                <button type="submit">Send</button>
-
+                <br>
+                <a href="./index2.html" class="signature"><strong><em>Вже
+                            зареєстровані?</em></strong></a>
             </form>
-
+            <h6>2022 - 2023 рік</h6>
         </section>
     </main>
 
